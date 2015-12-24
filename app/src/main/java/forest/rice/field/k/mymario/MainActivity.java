@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity implements ShakeDetector.Lis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.kazuaki.mymario.R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(com.example.kazuaki.mymario.R.id.toolbar);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
@@ -33,75 +33,75 @@ public class MainActivity extends AppCompatActivity implements ShakeDetector.Lis
         SoundPool soundPool = getSoundPool();
 
         mButton1 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button1),
+                (Button) findViewById(R.id.button1),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc26792,
-                com.example.kazuaki.mymario.R.string.button1
+                R.raw.nc26792,
+                R.string.button1
         );
 
         MyButton button2 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button2),
+                (Button) findViewById(R.id.button2),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc26813,
-                com.example.kazuaki.mymario.R.string.button2
+                R.raw.nc26813,
+                R.string.button2
         );
 
         mButton3 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button3),
+                (Button) findViewById(R.id.button3),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc26817,
-                com.example.kazuaki.mymario.R.string.button3
+                R.raw.nc26817,
+                R.string.button3
         );
 
         MyButton button4 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button4),
+                (Button) findViewById(R.id.button4),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc27131,
-                com.example.kazuaki.mymario.R.string.button4
+                R.raw.nc27131,
+                R.string.button4
         );
 
         MyButton button5 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button5),
+                (Button) findViewById(R.id.button5),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc27132,
-                com.example.kazuaki.mymario.R.string.button5
+                R.raw.nc27132,
+                R.string.button5
         );
 
         MyButton button6 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button6),
+                (Button) findViewById(R.id.button6),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc27241,
-                com.example.kazuaki.mymario.R.string.button6
+                R.raw.nc27241,
+                R.string.button6
         );
 
         MyButton button7 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button7),
+                (Button) findViewById(R.id.button7),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc27331,
-                com.example.kazuaki.mymario.R.string.button7
+                R.raw.nc27331,
+                R.string.button7
         );
 
         MyButton button8 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button8),
+                (Button) findViewById(R.id.button8),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc27333,
-                com.example.kazuaki.mymario.R.string.button8
+                R.raw.nc27333,
+                R.string.button8
         );
 
         MyButton button9 = new MyButton(
-                (Button) findViewById(com.example.kazuaki.mymario.R.id.button9),
+                (Button) findViewById(R.id.button9),
                 soundPool,
                 this,
-                com.example.kazuaki.mymario.R.raw.nc27355,
-                com.example.kazuaki.mymario.R.string.button9
+                R.raw.nc27355,
+                R.string.button9
         );
 
 
