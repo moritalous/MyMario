@@ -14,4 +14,10 @@ public class MushroomSound extends Sound {
     int getRawId() {
         return R.raw.nc26813;
     }
+
+    @Override
+    public void play() {
+        super.play();
+        vibrator.vibrate(150);
+    }
 }

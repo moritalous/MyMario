@@ -14,4 +14,10 @@ public class CoinSound extends Sound {
     int getRawId() {
         return R.raw.nc26792;
     }
+
+    @Override
+    public void play() {
+        super.play();
+        vibrator.vibrate(150);
+    }
 }
