@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".JumpActivity"
+            android:label="Jump" />
+        <activity
+            android:name=".CoinActivity"
+            android:label="Coin" />
     </application>
 
 </manifest>
