@@ -1,6 +1,7 @@
 package forest.rice.field.k.mymario;
 
 import android.hardware.SensorManager;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,8 @@ public class JumpActivity extends AppCompatActivity implements ShakeDetector.Lis
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         jumpSoundBarrage = new JumpSoundBarrage(this);
 

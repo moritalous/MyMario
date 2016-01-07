@@ -4,4 +4,5 @@
     <string name="button4">ジャンプ</string>
     <string name="jump_label">ジャンプ！！</string>
     <string name="coin_label">ふってコイン</string>
+    <string name="menu_source_title">Source</string>
 </resources>

@@ -1,6 +1,7 @@
 package forest.rice.field.k.mymario;
 
 import android.hardware.SensorManager;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
@@ -37,6 +38,8 @@ public class CoinActivity extends AppCompatActivity implements ShakeDetector.Lis
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         textCount = (TextView) findViewById(R.id.textCount);
         textCount.setText(String.valueOf(count));
