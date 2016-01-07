@@ -3,8 +3,11 @@ package forest.rice.field.k.mymario;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.squareup.seismic.ShakeDetector;
@@ -27,6 +30,13 @@ public class CoinActivity extends AppCompatActivity implements ShakeDetector.Lis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coin);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         textCount = (TextView) findViewById(R.id.textCount);
         textCount.setText(String.valueOf(count));
@@ -50,6 +60,20 @@ public class CoinActivity extends AppCompatActivity implements ShakeDetector.Lis
         super.onPause();
 
         sd.stop();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+            default:
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

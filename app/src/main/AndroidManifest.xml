@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="forest.rice.field.k.mymario">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -22,10 +22,12 @@
         </activity>
         <activity
             android:name=".JumpActivity"
-            android:label="Jump" />
+            android:label="Jump"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CoinActivity"
-            android:label="Coin" />
+            android:label="Coin"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

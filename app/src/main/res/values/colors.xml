@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#F44336</color>
-    <color name="colorPrimaryDark">#D32F2F</color>
-    <color name="colorAccent">#536DFE</color>
+    <color name="colorPrimary">#787bf5</color>
+    <color name="colorPrimaryDark">#6063f7</color>
+    <color name="colorAccent">#ebb17e</color>
+
+    <color name="marioBasic">#d30a0a</color>
+    <color name="LuigiBasic">#0ad30a</color>
+
 </resources>
