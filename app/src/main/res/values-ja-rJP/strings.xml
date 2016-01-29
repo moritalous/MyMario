@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">マリオ</string>
+    <string name="button1">コイン</string>
+    <string name="button2">ジャンプ</string>
+    <string name="button3">ゲーム</string>
+    <string name="jump_label">ジャンプ！！</string>
+    <string name="coin_label">ふってコイン</string>
+    <string name="count_game_label">ゲーム</string>
+    <string name="menu_source_title">ソース</string>
+    <string name="name_activity_jump">ジャンプ</string>
+    <string name="name_activity_coin">コイン</string>
+    <string name="name_activity_game">ゲーム</string>
+</resources>

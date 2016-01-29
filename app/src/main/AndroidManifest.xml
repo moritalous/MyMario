@@ -25,15 +25,21 @@
         <activity
             android:name=".JumpActivity"
             android:configChanges="orientation|screenSize"
-            android:label="Jump"
+            android:label="@string/name_activity_jump"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CoinActivity"
             android:configChanges="orientation|screenSize"
-            android:label="Coin"
+            android:label="@string/name_activity_coin"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CountGameActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/name_activity_game"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

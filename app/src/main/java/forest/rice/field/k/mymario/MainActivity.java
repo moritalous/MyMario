@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         Button button1 = (Button) findViewById(R.id.button1);
-        button1.setText("コイン");
+        button1.setText(R.string.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,11 +35,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button button2 = (Button) findViewById(R.id.button2);
-        button2.setText("ジャンプ");
+        button2.setText(R.string.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, JumpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button3 = (Button) findViewById(R.id.button3);
+        button3.setText(R.string.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CountGameActivity.class);
                 startActivity(intent);
             }
         });
